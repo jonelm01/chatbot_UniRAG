@@ -1,10 +1,10 @@
 # UniRAG Web App
 
-UniRAG is a full-stack RAG (Retrieval-Augmented Generation) chat application that provides intelligent answers with citations to policy documents. Features a modern Chat-GPT inspired sage green themed interface.
+UniRAG is a full-stack RAG (Retrieval-Augmented Generation) chat application that provides intelligent answers with citations to policy documents. Features a modern Chat-GPT inspired sage green themed interface. Requires a ChromaDB Cloud DB, Supabase PostgreSQL DB, and OpenAI API key.
 
 ## Quick Start
 
-### 1. Create and Set Up Virtual Environment
+### 1. Create and Set Up Virtual Environment and .Env
 
 **Create and Activate a Python virtual environment:**
 ```bash
@@ -16,6 +16,15 @@ python3 -m venv venv
 
 # Activate venv
 source venv/bin/activate
+```
+
+**Add an .env file with the following keys:**
+```bash
+OPENAI_API_KEY = "..."
+DB_URI = "postgresql:..."
+CHROMA_API_KEY='ck-...',
+CHROMA_TENANT='...',
+CHROMA_DATABASE='...'
 ```
 
 ### 2. Install Dependencies
@@ -83,11 +92,11 @@ npm run dev
 
 ## Features
 
-- 💬 Persistent chat history across sessions
-- 📚 Source citations from policy documents
-- 🗑️ Delete individual chat threads
-- 🎨 Custom Sage Green theme
-- 📱 Responsive design
+- Persistent chat history across sessions
+- Source citations from policy documents
+- Delete individual chat threads
+- Custom Sage Green theme/UI
+- Responsive design
 
 ## Troubleshooting
 
