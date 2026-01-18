@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Sage Green Theme / Light Mode */
+    --background: 140 35% 85%; /* Sage green */
+    --foreground: 140 25% 20%; /* Dark sage-gray text */
+    
+    --card: 0 0% 100%;
+    --card-foreground: 140 25% 20%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 25% 20%;
+    
+    --primary: 140 25% 40%; /* Sage Green */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 140 20% 92%; /* Light Sage */
+    --secondary-foreground: 140 25% 30%;
+    
+    --muted: 140 35% 75%;
+    --muted-foreground: 140 10% 45%;
+    
+    --accent: 140 20% 94%;
+    --accent-foreground: 140 25% 30%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 140 15% 90%;
+    --input: 140 15% 90%;
+    --ring: 140 25% 40%;
+    
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Placeholder for Dark Mode, keeping strict greyscale for now or could invert to Dark Sage */
+    --background: 140 25% 10%;
+    --foreground: 140 10% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground tracking-tight;
+  }
+}
