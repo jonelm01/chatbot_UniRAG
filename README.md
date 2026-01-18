@@ -8,8 +8,8 @@ UniRAG is a full-stack RAG (Retrieval-Augmented Generation) chat application tha
 
 **Create and Activate a Python virtual environment:**
 ```bash
-# Navigate to the directory
-cd ~/Desktop/rev/Week3/chat_app
+# Navigate to the project directory
+cd chatbot_UniRAG
 
 # Create virtual environment
 python3 -m venv venv
@@ -38,7 +38,7 @@ npm install
 
 ```bash
 # Ensure you are in the project root and venv is active
-cd ~/Desktop/rev/Week3/chat_app
+cd chatbot_UniRAG
 source venv/bin/activate
 
 # Run the start script
@@ -60,7 +60,7 @@ If you prefer to run each service yourself:
 
 **Terminal 1 - Backend:**
 ```bash
-cd ~/Desktop/rev/Week3/chat_app
+cd chatbot_UniRAG
 source venv/bin/activate
 cd backend
 uvicorn main:app --reload --port 8001
@@ -68,7 +68,7 @@ uvicorn main:app --reload --port 8001
 
 **Terminal 2 - Frontend:**
 ```bash
-cd ~/Desktop/rev/Week3/chat_app/frontend
+cd chatbot_UniRAG/frontend
 npm run dev
 ```
 
@@ -100,4 +100,4 @@ npm run dev
 - Check that the collection "rag_collection" exists in your ChromaDB Cloud account
 
 **500 errors:**
-- Check backend logs: `tail -f ~/Desktop/rev/Week3/chat_app/backend/backend.log`
+- Check backend logs: `tail -f backend/backend.log`
